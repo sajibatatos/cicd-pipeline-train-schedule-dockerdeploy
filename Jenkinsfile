@@ -16,7 +16,7 @@ pipeline {
                 script {
                     app = docker.build("sajibsahaatos/train-schedule")
                     app.inside {
-                        sh 'echo "Sajib Here"'
+                        sh 'echo sajib'
                     }
                 }
             }
