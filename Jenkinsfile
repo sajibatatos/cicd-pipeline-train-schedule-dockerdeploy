@@ -15,9 +15,7 @@ pipeline {
             steps {
                 script {
                     app = docker.build("sajibsahaatos/train-schedule")
-                    app.inside {
-                        sh 'node --version'
-                    }
+                    
                 }
             }
         }
